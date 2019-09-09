@@ -37,12 +37,16 @@ let car = {
     colors: [
         {'750li': 'red'},
         {'550Pi': 'white'}
-    ]
+    ],
+    printPrice: function() {
+        console.log(this.price);
+    }
 };
-console.log(typeof car);        // object
-console.log(typeof car.make);   //  string
-console.log(typeof car.model);  // object
-console.log(typeof car.price);  // number
-console.log(typeof car.colors); // object
-console.log(typeof car.colors[0]);  // object
+console.log(typeof car);                    // object
+console.log(typeof car.make);               // string
+console.log(typeof car.model);              // object
+console.log(typeof car.price);              // number
+console.log(typeof car.colors);             // object
+console.log(typeof car.colors[0]);          // object
 console.log(typeof car.colors[0]['750li']); // string
+console.log(typeof car.printPrice);         // function
