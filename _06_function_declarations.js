@@ -38,3 +38,8 @@ function calculateTax(amount){
 
 let tax = calculateTax(100);
 console.log(tax);
+
+// Or
+
+let tax2 = calculateTax.call(this, 100);
+console.log(tax2);
