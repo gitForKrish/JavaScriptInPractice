@@ -1,3 +1,4 @@
+// Array destructuring
 let a,b,c,d,e;
 let others;
 let names = ['jack', 'alex', 'ramu', 'ganu', 'anu'];
@@ -27,6 +28,7 @@ console.log(a);
 console.log(e);
 console.log(others); */
 
+// Object destucturing
 /* let year, model;
 ({year, model} = {
     model: '750li',
