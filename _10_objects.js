@@ -43,3 +43,25 @@ let b = {
 console.log(b.myProperty[2].e);
 console.log(b.myProperty);
 console.log(b.myProperty.toString());
+
+// Three ways to create objects
+let obj1 = {};
+let obj2 = new Object();
+let obj3 = Object.create(obj2); // creates a new object, using an existing object as the prototype of the newly created object
+
+console.log(obj1);
+console.log(obj2);
+console.log(obj3);
+ 
+/* Categories of JavaScript objects:
+- native object: defined by the ECMAScript specification. Eg: Objects, Arrays, functions, dates, and regular expressions.
+- host object: defined by the host environment (such as a web browser) within which the JavaScript interpreter is embedded.
+        Eg: HTMLElement objects that represent the structure of a web page in client-side JavaScript are host objects.
+        Host objects may also be native objects.
+- user-defined object: any object created by the execution of JavaScript code.
+*/
+
+/* Prototypes:
+- Every JavaScript object has a second JavaScript object associated with it. 
+- This second object is known as a prototype, and the first object inherits properties from the prototype.
+*/
