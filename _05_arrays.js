@@ -1,4 +1,4 @@
-let a = [4,8,16,42,52];
+/* let a = [4,8,16,42,52];
 console.log(a[0]);          // 4
 console.log(a);             // [4, 8, 16, 42, 52]
 console.log(a.length);      // 5
@@ -60,4 +60,75 @@ console.log(d.length);      // 5
 
 let e = new Array('Hello');
 console.log(e);             // [ 'Hello' ]
-console.log(e.length);      // 1
+console.log(e.length);      // 1 */
+
+// The Definitive Guide Step by Step
+/*-------------------------------------------------------------------------------------------------------------------------------------------- */
+/* 
+- An Array is an ordered collection of 'UNTYPED' values.
+- JavaScript arrays are 'dynamic': they grow or shrink as needed.
+- JavaScript arrays are zero-based and use 32-bit indexes - first element is at 0, and the highest possible index is 4294967294 (23^2−2).
+- JavaScript arrays may be 'sparse': the elements need not have contiguous indexes and there may be gaps.
+- JavaScript arrays are a specialized form of 'JavaScript object'.
+- Arrays inherit properties from 'Array.prototype', which defines a rich set of array manipulation methods.
+- Every JavaScript array has a 'length' property.
+*/
+
+/* // Creating Arrays
+let emptyArray = [];
+console.log(emptyArray);
+console.log(emptyArray.length);
+
+let noValueArray = [,,];    // Array containing 2 empty values
+console.log(noValueArray);
+console.log(noValueArray.length);
+console.log(noValueArray[1]);   // omitted element is given the value undefined
+
+let omittedArray = [5,,,8];
+console.log(omittedArray);
+console.log(omittedArray.length);
+
+let numericArray = [7,8,2,9,4,6];
+console.log(numericArray);
+console.log(numericArray.length);
+
+let untypedArray = ['hello', 100, true, undefined, null, {x:30, y: 40}, [50.25,60.89], ()=>{'arrow function'} ];
+console.log(untypedArray);
+console.log(untypedArray.length);
+
+// The values in an array literal need not be constants
+let base = 100;
+let baseArray = [base, base+2, base+4, base+10];
+console.log(baseArray);
+
+// Create an array is with the Array() constructor
+let a = new Array();    // no argument - define empty array
+console.log(a);
+
+let b = new Array(10);  // single numeric argument - define array size
+console.log(b);
+console.log(b.length);
+
+let c = new Array(15,20);   // more than one arguments - define array elements
+console.log(c);
+console.log(c.length);
+
+let d = new Array('Hello'); // single nonnumeric argument - define array element
+console.log(d);
+console.log(d.length);
+
+let e = new Array('h1',8,9,true,undefined); 
+console.log(e);
+console.log(e.length); */
+
+let number = [7,8,2,9,4,6];
+console.log(number[-2]);
+number[-2] = 50;
+console.log(number[-2]);
+console.log(number);    // [ 7, 8, 2, 9, 4, 6, '-2': 50 ]
+console.log(number.length);
+// JavaScript converts the numeric array index to a string — the index 1 becomes the string "1"—then uses that string as a property name
+// number[5] = 10 -> number.'5' = 10 
+console.log(number['1']);
+
+
