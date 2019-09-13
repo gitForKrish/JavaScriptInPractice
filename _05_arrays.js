@@ -99,7 +99,7 @@ console.log(untypedArray.length);
 // The values in an array literal need not be constants
 let base = 100;
 let baseArray = [base, base+2, base+4, base+10];
-console.log(baseArray); */
+console.log(baseArray);
 
 // Create an array is with the Array() constructor
 let a = new Array();    // no argument - define empty array
@@ -119,6 +119,16 @@ console.log(d.length);
 
 let e = new Array('h1',8,9,true,undefined); 
 console.log(e);
-console.log(e.length);
+console.log(e.length); */
+
+let number = [7,8,2,9,4,6];
+console.log(number[-2]);
+number[-2] = 50;
+console.log(number[-2]);
+console.log(number);    // [ 7, 8, 2, 9, 4, 6, '-2': 50 ]
+console.log(number.length);
+// JavaScript converts the numeric array index to a string — the index 1 becomes the string "1"—then uses that string as a property name
+// number[5] = 10 -> number.'5' = 10 
+console.log(number['1']);
 
 
