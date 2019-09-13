@@ -126,9 +126,21 @@ console.log(number[-2]);
 number[-2] = 50;
 console.log(number[-2]);
 console.log(number);    // [ 7, 8, 2, 9, 4, 6, '-2': 50 ]
-console.log(number.length);
-// JavaScript converts the numeric array index to a string — the index 1 becomes the string "1"—then uses that string as a property name
+// property names that are non-negative integers less than 2^32, the array automatically maintains the value of the length property
+console.log(number.length); // 6 -> notice '-2' is not included here
+// JavaScript arrays are a specialized form of JavaScript object.
+// JavaScript converts the numeric array index to a string 
+// — the index 1 becomes the string "1"—then uses that string as a property name
 // number[5] = 10 -> number.'5' = 10 
 console.log(number['1']);
+number['20'] = 20;      // 20 will be assigned to array index 20
+console.log(number.length)
+console.log(number);
 
+number[15.00] = 15;     // 15 will be assigned to array index 15
+console.log(number.length)
+console.log(number);
 
+number[16.58] = 16;     // 16 will be assigned to a property to "16.58"
+console.log(number.length)
+console.log(number);
