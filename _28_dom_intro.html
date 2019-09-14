@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Introduction</title>
+</head>
+<body>
+    <h>Header</h>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <button onclick="alert('hi')">Click To Get Alert</button>
+    <button onclick="console.log('Hi in console')">Click to log</button>
+    <button onclick="clickHandler('From button')">Click for Event Handler</button>
+    <button id = "myButton">Click to call IIFE</button>
+    <script>
+        function clickHandler(message) {
+            console.log(`hi ... ${message}`);
+        }        
+    </script>
+    <script type="text/javascript" src="_28_dom_intro.js"></script>
+</body>
+</html>
