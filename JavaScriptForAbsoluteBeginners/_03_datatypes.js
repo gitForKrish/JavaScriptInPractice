@@ -11,6 +11,9 @@ let a;
 console.log(a); // undefined as value
 console.log(typeof a); // undefined as type
 
+let sym = Symbol();
+console.log(typeof sym);
+
 // variable doesn't have datatype, it is the value that it store, defined the datatype
 let changeDatatype = 10;
 console.log(typeof changeDatatype); // number
@@ -50,3 +53,27 @@ console.log(typeof car.colors);             // object
 console.log(typeof car.colors[0]);          // object
 console.log(typeof car.colors[0]['750li']); // string
 console.log(typeof car.printPrice);         // function
+
+/*------------Primitive Types (Stored in Stack)------------*/
+// String
+// Number
+// Boolean
+// undefined
+// null
+// Symbol
+
+/*-------------Reference Types (Stored in Heap)--------------*/
+// Object literals
+// Arrays
+// Date
+// RegExp
+// Functions
+// Anything else
+
+/*
+JavaScript is a dynamically typed language
+- Types are associated with values not with variables
+- The same variable can hold multiple types 
+- No need to specify type while variable declaration
+- TypeScript is a static typed language which is superset of JavaScript
+*/
