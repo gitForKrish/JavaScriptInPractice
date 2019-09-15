@@ -16,14 +16,36 @@ console.log('Answer: ' + z); // + operator works as concatenation
 let firstNumber = 10;
 let secondNumber = 15;
 
-// using constant variable
+/* -------------------- using constant variable ----------------------------*/
 const name = 'Krish';
 console.log(name);
 
-// 1. We can not do reassignment
+// Restriction 1. We can not do reassignment
 // name = 'Tanmoy';  // TypeError: Assignment to constant variable.
 
-// 2. Only variable decalaration is restricted, you need to initialize also
+// Restriction 2. Only variable decalaration is restricted, you need to initialize also
 // const number; // SyntaxError: Missing initializer in const declaration
 // number = 100;
 // console.log(number);
+
+// For Object and Array, it is possible to change the property or index value but reassignment is not allowed
+const person = {firstName:'Krish', lastName:'Mandal', age:30};
+console.log(person);
+
+person.firstName = 'Tanmoy';
+person.age = 31;
+console.log(person);
+
+// but this is not allowed 
+// person = {name: 'Krish'}; // TypeError: Assignment to constant variable.
+// console.log(person);
+
+const numbers = [1,2,3,4,5];
+console.log(numbers);
+
+numbers.push(6);
+console.log(numbers);
+
+//but this is not allowed
+// numbers = [10,11,12]; // TypeError: Assignment to constant variable.
+// console.log(numbers);
