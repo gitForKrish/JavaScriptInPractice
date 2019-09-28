@@ -17,6 +17,9 @@ val = document.links[0];
 val = document.links[0].href;
 val = document.links[0].innerText;
 
+val = document.forms; // empty html collection 
+val = document.forms[0];  // undefined
+
 console.log(val);
 
 // HTML Collection to List
