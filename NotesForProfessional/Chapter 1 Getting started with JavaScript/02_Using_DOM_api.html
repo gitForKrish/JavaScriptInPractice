@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Using DOM API</title>
+  </head>
+  <body>
+    <h1 id="heading"></h1>
+
+    <script>
+      // Adding text content to DOM element
+      var heading = document.getElementById("heading");
+      heading.textContent = "Hello DOM";
+
+      // Adding new element in the DOM
+      var paragraph = document.createElement("p");
+      paragraph.textContent = "This is a paragraph, added through DOM";
+      document.body.appendChild(paragraph);
+
+      console.log(document.body);
+    </script>
+  </body>
+</html>
