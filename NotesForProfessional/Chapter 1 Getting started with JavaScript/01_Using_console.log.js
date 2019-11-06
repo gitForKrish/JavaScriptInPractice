@@ -18,10 +18,11 @@ console.log("%s %s", greet, who);
 // Objects
 var evenNumbers = [2, 4, 6, 8, 10];
 console.log(evenNumbers);
+console.log("%o", evenNumbers);
 
 var person = {
   name: "Stanley",
   age: 32,
   country: "INDIA"
 };
-console.log(person);
+console.log("%o", person);
