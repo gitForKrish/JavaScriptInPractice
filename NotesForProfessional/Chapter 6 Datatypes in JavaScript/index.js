@@ -2,7 +2,7 @@ function Sum(...args) {
   if (args.length === 1) {
     const [firstArg] = args;
     if (firstArg instanceof Array) 
-      return Sum(firstArg);
+      return Sum(...firstArg);
     else
       return firstArg;
   }
